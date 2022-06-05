@@ -10,6 +10,10 @@ test:
 install_pyenv:
 	sudo apt -y update
 	sudo apt -y upgrade
+	sudo apt install \
+  	build-essential libssl-dev zlib1g-dev \
+  	libbz2-dev libreadline-dev libsqlite3-dev curl llvm \
+  	libncursesw5-dev tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev \
+  	libopencv-dev git
 	git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-	echo 'eval "$(pyenv init -)"' >> ~/.bashrc
-	source ~/.bashrc
+	echo 'eval "$$(pyenv init -)"' >> ~/.bashrc
