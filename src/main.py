@@ -17,4 +17,5 @@ def main():
     print("mul: " + str(operator.mul()))
     print("dev: " + str(operator.dev()))
 
-main()
+if __name__ == '__main__':
+    main()
